@@ -1,5 +1,7 @@
 package com.example.hamishstewart.kaijumonsters.Monsters.Monsters;
 
+import com.example.hamishstewart.kaijumonsters.Monsters.Vehicles.Vehicle;
+
 /**
  * Created by hamishstewart on 01/11/2017.
  */
@@ -27,5 +29,9 @@ public abstract class Kaiju {
 
     public int getAttackValue() {
         return this.attackValue;
+    }
+
+    public void attack(Vehicle vehicle ) {
+        vehicle.damage(this.attackValue);
     }
 }

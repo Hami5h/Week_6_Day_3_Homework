@@ -26,4 +26,10 @@ public class TankTest {
     public void hasHealth() {
         assertEquals(100, tank.getHealthValue());
     }
+
+    @Test
+    public void hasDamage() {
+        tank.damage(10);
+        assertEquals(90, tank.getHealthValue());
+    }
 }
