@@ -1,5 +1,7 @@
 package com.example.hamishstewart.kaijumonsters;
 
+import com.example.hamishstewart.kaijumonsters.Monsters.Monsters.Godzilla;
+
 import static org.junit.Assert.*;
 import org.junit.*;
 
@@ -28,6 +30,11 @@ public class GodzillaTest {
     @Test
     public void hasAttackValue() {
         assertEquals(100, godzilla.getAttackValue());
+    }
+
+    @Test
+    public void canRoar() {
+        assertEquals("I am Godzilla!!!!", godzilla.roar());
     }
 
 }
