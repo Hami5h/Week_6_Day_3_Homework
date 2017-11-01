@@ -13,4 +13,12 @@ public abstract class Vehicle {
         this.healthValue = healthValue;
 
     }
+
+    public String getType() {
+        return this.type;
+    }
+
+    public int getHealthValue() {
+        return this.healthValue;
+    }
 }
