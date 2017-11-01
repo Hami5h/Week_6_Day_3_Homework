@@ -37,4 +37,14 @@ public class GodzillaTest {
         assertEquals("I am Godzilla!!!!", godzilla.roar());
     }
 
+    @Test
+    public void canMove() {
+        assertEquals("I am going to China!!", godzilla.move());
+    }
+
+    @Test
+    public void canFly() {
+        assertEquals("I am flying to the Moon!", godzilla.fly());
+    }
+
 }
